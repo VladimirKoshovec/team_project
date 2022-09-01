@@ -1,0 +1,64 @@
+.header{
+
+    padding-top: 12px;
+    
+    background-image: url(../images/header/points_mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #84A178;
+    background-size: 100%;
+
+    &__logo-image{
+        width: 41;
+        height: 37;
+    }
+
+    &__button{
+        width: 20px;
+        height: 12px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__button-svg{
+        fill: #fff;
+    }
+
+    &__nav{
+       display: flex;
+       justify-content: space-between;
+    }
+
+    &__title{
+
+        margin: 0;
+        padding: 0;
+        font-family: 'Seymour One', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.38;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #fff;
+
+        margin-top: 58px;
+    }
+
+    &__title-span{
+        font-size: 31px;
+        line-height: 22px;
+    }
+}
+
+.header-image{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
