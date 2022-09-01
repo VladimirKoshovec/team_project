@@ -15,14 +15,15 @@
 
     &__button{
         width: 20px;
-        height: 12px;
+        height: 20px;
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
 
     &__button-svg{
-        fill: #fff;
+        width: 20px;
+        height: 12px;
     }
 
     &__nav{
@@ -45,9 +46,36 @@
         margin-top: 58px;
     }
 
+    .title-container{
+        max-width: 247px;
+    }
+
     &__title-span{
         font-size: 31px;
         line-height: 22px;
+    }
+}
+
+.heder-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+
+    &__item{
+
+    }
+
+    &__item:nth-child(1){
+        margin-right: 16px;
+    }
+
+    &__link{
+        color: #F8D24E;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 1.25;
     }
 }
 
