@@ -1,5 +1,5 @@
 .header{
-
+    position: relative;
     padding-top: 12px;
     
     background-image: url(../images/header/points_mobile.svg);
@@ -44,6 +44,7 @@
         color: #fff;
 
         margin-top: 58px;
+        
     }
 
     .title-container{
@@ -54,6 +55,18 @@
         font-size: 31px;
         line-height: 22px;
     }
+
+    &__ice{
+        position: absolute;
+        bottom: -56px;
+        right:10px;
+        
+    }
+
+    &__ice-img{
+        // width: 157px;
+        // height: 208px;
+    }
 }
 
 .heder-links{
@@ -62,6 +75,7 @@
     margin: 0;
     padding: 0;
     margin-top: 32px;
+    margin-bottom: 239px;
 
     &__item{
 
