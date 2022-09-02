@@ -224,6 +224,12 @@
     margin-top: 32px;
     margin-bottom: 239px;
 
+    @media screen and (min-width:768px) and (max-width:1199px){
+        margin-top: 20px;
+        margin-bottom: 193px;
+    }
+
+
     &__item{
 
     }
