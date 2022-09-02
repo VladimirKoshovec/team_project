@@ -1,0 +1,67 @@
+// --Bacground--
+
+
+// --Foto ice--
+
+
+// --Foto woman--
+
+
+// --Block comments--
+.gallery__comments {
+  max-width: 100%;
+  padding: 34px 39px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  
+  background-color: #84A178;
+}
+
+.gallery__text {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  
+  color: #FCFCFC;
+}
+
+// --Text--
+.gallery__text-name {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+
+  color: #000000;
+}
+
+// --Cicles--
+.gallery__cicles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__cicles--green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  
+  background-color: #84A178;
+}
+
+.gallery__cicles--grey {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+
+  background-color: #D9D9D9;
+}
