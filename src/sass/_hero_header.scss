@@ -1,18 +1,26 @@
 .header{
-    position: relative;
-    padding-top: 12px;
-    
-    
 
+    
+    padding-top: 12px;
     background-color: #84A178;
 
     &__container{
+        position: relative;
         background-image: url(../images/header/points_mobile.svg);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
+
+        @media screen and (min-width: 768px){
+            background-image: url(../images/header/dots_tablet.svg);
+        }
+
+        @media screen and (min-width: 1200px){
+            background-image: url(../images/header/dots_desktop.svg);
+        }
+
     }
-    
+        
 
     &__logo-image{
         width: 41;
@@ -62,35 +70,34 @@
         line-height: 22px;
     }
 
-    &__ice{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        right: 50%;
-        transform:translate(-50%); 
-        
-        // background-color: transparent;
-        // background-image: url(../images/header/ice.png);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: 80%;
-        // width: 100%;
-        // height: 207;
-        // top: 0;
-        // left: 0;
-    }
 
     &__ice-img{
+        
         position: absolute;
-        bottom: 0;
-        left: 50%;
-        right: 50%;
-        transform:translate(-48%); 
+        left: 52%;
 
-        bottom: -52px;
+        transform:translateX(-50%); 
+
+        bottom: -57px;
+
+        @media screen and (min-width: 768px){
+            
+            position: absolute; 
+            right: 39%;
+
+            bottom: -59px;
+        }
+
+        @media screen and (min-width: 1200px){
+            
+            position: absolute; 
+            right: 39%;
+
+            bottom: -100px;
+        }
+       
     }
 }
-
 .heder-links{
     display: flex;
     list-style: none;

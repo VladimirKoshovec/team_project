@@ -18,8 +18,18 @@
         <li class="heder-links__item"><button>Products</button></li>
         <li class="heder-links__item"><a class="heder-links__link">How it’s made?</a></li>
     </ul>
-    <div class="header__ice">
-        <img src="./images/header/ice.png" class="header__ice-img"/>
-    </div>    
+        <!-- <img
+           srcset="./images/header/ice.png 500w, ./images/header/ice_tablet.png 300w, ./images/header/ice.png 1200w"
+           sizes="(min-width: 900px) 600px, (min-width: 480px) 300px,  100vw"
+           src="./images/header/ice.png"
+           alt="мороженко"
+        /> -->
+        <!-- <img src="./images/header/ice.png" class="header__ice-img"/> -->
+        <picture  class="header__ice-img">
+            <source srcset="./images/header/ice.png" media="(max-width: 768px)" />
+            <source srcset="./images/header/ice_tablet.png" media="(max-width: 1199px)" />
+            <source srcset="./images/header/ice_desktop.png" media="(min-width: 1200px)" />
+            <img src="./images/header/ice.png" alt="Мороженко" />
+        </picture> 
 </div>
 </header>
