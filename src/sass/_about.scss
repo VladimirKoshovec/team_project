@@ -41,6 +41,9 @@
 .about__img {
     position: absolute;
     top: 22px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .about__description {
     margin-bottom: 20px;
@@ -161,9 +164,4 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
