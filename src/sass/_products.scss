@@ -1,5 +1,18 @@
 
+.products {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-image: url(../images/products/products-background-mobile.jpg);
+    background-size: contain;
+    text-align: center;
 
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
 
 .products__label {
     font-family: Montserrat;
@@ -11,11 +24,15 @@
     color: #000000;
     margin-top: 0;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;            
+    }
+
 }
 
 .products__title {
-    font-family: 'Seymour One';
-        
+    font-family: 'Seymour One';        
         font-weight: 400;
         font-size: 30px;
         line-height: 1.27;   
@@ -25,19 +42,16 @@
         color: #000000;
         margin-top: 0;
         margin-bottom: 148px;
+
+@media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 1.26;
+        margin-bottom: 200px;
+    }
+
 }
 
-.products {
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    background-image: url(../images/products/products-background-mobile.jpg);
-    background-size: contain;
-    text-align: center;
-}
-
-.products__list {
-    
+.products__list {    
     list-style: none;
     padding-left: 0;
     margin-top: 0;
