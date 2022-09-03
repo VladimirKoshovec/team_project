@@ -12,7 +12,10 @@
             <li class=""><a href="#" class=""></a></li>
         </ul> -->
         <button type="button" class="header__button">
-            <img src="./images/header/burger.svg" class="header__button-svg"/>
+            <!-- <img src="./images/header/burger.svg" class="header__button-svg"/> -->
+            <svg class="header__button-svg" aria-label="переключатель мобильного меню">
+                <use href="./images/sprite.svg#icon-Burger"></use>
+            </svg>
         </button>
     </nav>
 
@@ -38,13 +41,6 @@
         <li class="heder-links__item"><button>Products</button></li>
         <li class="heder-links__item"><a class="heder-links__link">How it’s made?</a></li>
     </ul>
-        <!-- <img
-           srcset="./images/header/ice.png 500w, ./images/header/ice_tablet.png 300w, ./images/header/ice.png 1200w"
-           sizes="(min-width: 900px) 600px, (min-width: 480px) 300px,  100vw"
-           src="./images/header/ice.png"
-           alt="мороженко"
-        /> -->
-        <!-- <img src="./images/header/ice.png" class="header__ice-img"/> -->
         <picture  class="header__ice-img">
             <source srcset="./images/header/ice.png" media="(max-width: 768px)" />
             <source srcset="./images/header/ice_tablet.png" media="(max-width: 1199px)" />
