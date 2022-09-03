@@ -358,8 +358,6 @@ transform: translate(-50%, -160%);
     }
 
 }
-
-
 } 
 
 
@@ -370,20 +368,58 @@ transform: translate(-50%, -160%);
     margin-right: auto;
     border: none;
     padding: 0;
-
+    width: 41px;
+    height: 15px;
 }
 
 
 .btn--bg-green {
 background-color: #AEC6A5;
+background-image: url(../images/products/arrow-default.png);
+
+    &:hover {
+        background-image: url(../images/products/arrow-hover.png);
+        width: 51px;
+    }
+
+    &:focus {
+        background-image: url(../images/products/arrow-focus.png);
+        width: 51px;
+        height: 22px;
+}
 }
 
 .btn--bg-yellow {
     background-color: #EFD478;
+    background-image: url(../images/products/arrow-default.png);
+    
+        &:hover {
+            background-image: url(../images/products/arrow-hover.png);
+            width: 51px;
+        }
+    
+        &:focus {
+            background-image: url(../images/products/arrow-focus.png);
+            width: 51px;
+            height: 22px;
+}
 }
 
 .btn--bg-brown {
     background-color: #D6936D;
+    background-image: url(../images/products/arrow-default.png);
+
+    &:hover {
+    background-image: url(../images/products/arrow-hover.png);
+    width: 51px;
+    }
+
+&:focus {
+    background-image: url(../images/products/arrow-focus.png);
+    width: 51px;
+    height: 22px;
+}
+
 }
 
 button {
