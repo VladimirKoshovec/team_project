@@ -3,16 +3,17 @@
     width: 100%;
     padding-top: 60px;
     padding-bottom: 80px;
-    background-image: url(../images/products/products-background-mobile.jpg);
-    background-size: contain;
+    background-image: url(../images/products/products-background-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 
-
-}
-
 @media screen and (min-width: 768px) {
+        background-image: url(../images/products/products-background-tablet@2x.jpg);
+    }
 
 }
+
 
 .products__label {
     font-family: Montserrat;
@@ -56,15 +57,35 @@
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+
+@media screen and (min-width: 768px) {
+        display: flex;
+        margin-right: -10px;
+    }
+
 }
 
 .products__item {
-    display: block;
-    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    height: 420px; 
     padding: 123px 40px 20px 40px;
     justify-content: center;
     margin-bottom: 148px;
+    border-radius: 24px;
+
+@media screen and (min-width: 768px) {
+        padding: 108px 26px 20px 26px;
+        margin-bottom: 0;
+        margin-right: 16px;
+        height: 428px;
+        flex-basis: calc((100% - 2 * 16px)/3);
+        border-radius: 15.78px;
+    }
+
 }
+
 
 .item-title {
     font-family: 'Montserrat';
@@ -77,6 +98,11 @@
         color: #131313;
         margin-top: 0;
         margin-bottom: 40px;
+
+@media screen and (min-width: 768px) {
+ font-size: 22px;
+ line-height: 1.23;
+}
 }
 
 .item-description {
@@ -93,30 +119,27 @@
 
 .products__item--icecream {
     position: relative;
-    display: block;
-    height: 420px;
-    width: 100%;
+    
+    
     background-color: #AEC6A5;
-    border-radius: 24px;    
+       
 }
 
 
 .products__item--icecoffee {
     position: relative;
-    display: block;
-    height: 420px;
-    width: 100%;
+    
+    
     background-color: #EFD478;
-    border-radius: 24px;
+    
 }
 
 .products__item--milkshakes {
     position: relative;
-    display: block;
-    height: 420px;
-    width: 100%;
+    
+    
     background-color: #D6936D;
-    border-radius: 24px;
+    
     margin-bottom: 0;
 }
 
@@ -145,9 +168,15 @@
 
         background-image: url(../images/products/ice-cream-mobile-tablet.png@2x.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
         }
+
+@media screen and (min-width: 768px) {
+
+width: 200px;
+height: 208px;
+transform: translate(-50%, -160%);
+}
+
 } 
-
-
 
 .products__item--icecoffee::before {
     content: "";
@@ -174,6 +203,13 @@
         
                 background-image: url(../images/products/ice-coffee-mobile-tablet.png@2x.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
             }
+
+                        @media screen and (min-width: 768px) {
+            
+                            width: 200px;
+                            height: 208px;
+                            transform: translate(-50%, -160%);
+                        }
 
 }
 
@@ -203,24 +239,27 @@
         background-image: url(../images/products/milkshakes-mobile-tablet.png@2x.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
     }
 
+@media screen and (min-width: 768px) {
+
+    width: 200px;
+    height: 208px;
+    transform: translate(-50%, -160%);
+}
+
+
 } 
 
 
-.products__item--flex-column {
-    display: flex;
-    flex-direction: column;    
-    height: 277px;
-}
-
 .btn--arrow {
-    display: block;    
-    margin-top: auto;    
+    display: block;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     border: none;
     padding: 0;
-    
+
 }
+
 
 .btn--bg-green {
 background-color: #AEC6A5;
