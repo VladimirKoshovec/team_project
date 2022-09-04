@@ -1,6 +1,14 @@
 .about {
     padding-top: 60px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
+    }
 }
 
 .about__container {
@@ -81,7 +89,7 @@
         letter-spacing: 0.06em;
     }
     
-    .about__container {
+    .about__container-main {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -130,15 +138,7 @@
         margin-right: 108px;
         width: 490px;
         height: 490px;
-
     }
-
-    .about__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .about__img {
         top: 39px;
     }
