@@ -1,0 +1,346 @@
+/*-----COMPONENTS------*/
+
+.ice-bg {
+    background-color: #84A178;
+}
+
+.locations-button {
+    padding-top: 14px;
+    padding-right: 34px;
+    padding-bottom: 14px;
+    padding-left: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    border: #F8D24E;
+    border-radius: 10px;
+    background-color: #F8D24E;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: #0A8817;
+        border-color: #0A8817;
+    }
+
+    &:focus {
+        background-color: #0A8817;
+        color: #FCFCFC;
+    }
+}
+
+.franchise-button {
+    padding-top: 12px;
+    padding-right: 46px;
+    padding-bottom: 12px;
+    padding-left: 46px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    background-color: #84A178;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border-color: #0A8817;
+    }
+
+    &:focus {
+        color: #FCFCFC;
+    }
+}
+
+.button-icon {
+    margin-left: 6px;
+
+    .locations-button:focus &,
+    .franchise-button:focus & {
+        fill: #FCFCFC;
+    }
+}
+
+/*--Візуально приховує, але доступне для браузерів, скрінрідерів і пошук.сист.--*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/*--Задаємо ширину контенту--*/
+.ice-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+@media screen and (min-width: 480px) {
+    .ice-container {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ice-container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ice-container {
+        width: 1200px;
+    }
+}
+
+/*--Задаємо падінги для всіх секцій--*/
+.ice-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+//--1200
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+
+
+
+/*-----CONTACTS------*/
+
+.contacts {
+    position: relative;
+    margin-top: 0;
+}
+
+.contacts__block-container {
+
+    height: content;
+    background: #FFFFFF;
+    padding: 40px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts__block-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transform: translate(0, -345px);
+}
+
+.contacts__block-item {
+    display: flex;
+    max-width: 280px;
+}
+
+.contacts__block-title-cafe {
+    width: 80px;
+    height: 16px;
+    background-color: #F8D24E;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacts__block-title-truck {
+    width: 130px;
+    height: 16px;
+    background-color: #F8D24E;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacts__list-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item-address {
+    margin-bottom: 8px;
+}
+
+.contacts__list-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item-time {
+    margin-bottom: 12px;
+}
+
+.contacts__list::after {
+    content: "";
+    max-width: 288px;
+    height: 0px;
+    border: 1px solid #E1E1E1;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.contacts__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+.contacts__text-address {
+    color: #D6936D;
+    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.contacts__text-time {
+    color: #ABABAB;
+}
+
+.contacts__list-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: -310px;
+    padding-bottom: 39px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .contacts__block-list {
+        transform: translate(0, -300px);
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .contacts__list-button {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-top: -235px;
+        padding-bottom: 40px;
+    }
+
+    .contacts__block-item {
+        max-width: calc((100% - 32px)/3);
+    }
+
+    .contacts__block-container {
+        padding-top: 40px;
+        padding-left: 24px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .contacts__text {
+        font-size: 14px;
+    }
+
+    .contacts__item-time {
+        margin-bottom: 12px;
+    }
+
+    .contacts__list::after {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .contacts__block-title-cafe {
+        width: 73px;
+        height: 28px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        color: #131313;
+        margin-bottom: 32px;
+    }
+
+    .contacts__block-title-truck {
+        width: 138px;
+        height: 28px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        color: #131313;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts__block-list {
+        transform: translate(0, -100px);
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .contacts__list-button {
+        margin-top: -35px;
+        padding-bottom: 120px;
+    }
+
+    .contacts__block-item {
+        max-width: calc((100% - 64px)/3);
+    }
+
+    .contacts__block-container {
+        padding: 40px;
+    }
+
+    .contacts__text {
+        font-size: 16px;
+    }
+}
