@@ -1,4 +1,5 @@
-.about {
+.about__container {
+    background-color: #84A178;
     padding-top: 60px;
     padding-bottom: 40px;
 
@@ -9,10 +10,6 @@
     @media screen and (min-width: 1200px) {
         padding-bottom: 60px;
     }
-}
-
-.about__container {
-    background-color: #84A178;
 }
 
 .about__lable {
