@@ -1,21 +1,72 @@
 // --Bacground--
+.gallery__container {
+  background-image: url(../images/gallery/background/background-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+ 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+  
+      background-image: url(../images/gallery/background/background-mob@2x.png);
+        }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/gallery/background/background-tab.png);
+      
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      
+        background-image: url(../images/gallery/background/background-tab@2x.png)
+          }
+  }
+      
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/gallery/background/background-des.png);
+              
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+      
+          background-image: url(../images/gallery/background/background-des@2x.png);
+            }  
+  }
+}
 
 
 // --Foto ice--
 
 
 // --Foto woman--
+.gallery__woman {
+  display: block;
+  height: auto;
+}
 
+.gallery__woman-indent {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
 
 // --Block comments--
 .gallery__comments {
   max-width: 100%;
   padding: 34px 39px;
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 10px;
   
   background-color: #84A178;
+}
+
+.gallery__comments-indent {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .gallery__text {
@@ -27,6 +78,10 @@
   line-height: 255%;
   
   color: #FCFCFC;
+}
+
+.gallery__text-indent {
+  margin-bottom: 14px;
 }
 
 // --Text--
@@ -48,6 +103,10 @@
   align-items: center;
 }
 
+.gallery__cicles-indent {
+  margin-bottom: 393px;
+}
+
 .gallery__cicles--green {
   width: 12px;
   height: 12px;
@@ -64,4 +123,10 @@
   border: none;
 
   background-color: #D9D9D9;
+}
+
+.cicles-indent {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
 }
