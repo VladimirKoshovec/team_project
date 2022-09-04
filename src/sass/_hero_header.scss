@@ -9,6 +9,8 @@
         background-position: bottom;
         background-size: 100%;
 
+        overflow: hidden;
+
         @media screen and (min-width: 768px){
             padding-top: 20px;
             background-image: url(../images/header/dots_tablet.svg);
@@ -508,11 +510,8 @@
 
 .mobile{
 
-   
-    opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -523,9 +522,10 @@
     top: 0;
     left: 0;
 
+    transform: translateX(100%);
     margin: 0;
 
-    transition: opacity 250ms linear,
+    transition: transform 250ms linear,
     visibility 250ms linear;
     
     &__button{
@@ -550,6 +550,8 @@
 
     &__button-svg{
 
+        fill: #FFFFFF;
+
         width: 32px;
         height: 32px; 
         margin: 0;
@@ -558,7 +560,8 @@
     }
 
     &.mobile--open{
-        opacity: 1;
+
+        transform: translateX(0);
         visibility: visible;
         pointer-events: auto;
     }
