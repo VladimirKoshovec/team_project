@@ -1,0 +1,20 @@
+.buttons-buy{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 0;
+
+    &__svg{
+        width: 32px;
+        height: 32px; 
+        margin: 0;
+        padding: 0;
+    }
+}

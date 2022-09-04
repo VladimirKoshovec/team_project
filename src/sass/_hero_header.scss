@@ -44,6 +44,8 @@
         border: none;
         cursor: pointer;
 
+        margin-top: -10px;
+
         padding: 0;
         
         @media screen and (min-width:768px) and (max-width:1199px) {
@@ -503,5 +505,67 @@
             font-size: 14px;
         }
 
+    }
+}
+
+.mobile{
+
+   
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+
+    background-color: #97AF8D;
+
+    top: 0;
+    left: 0;
+
+    margin: 0;
+
+    transition: opacity 250ms linear,
+    visibility 250ms linear;
+    
+    &__button{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        padding: 0;
+
+        position: absolute;
+
+        top:16px;
+        right:20px;
+
+    }
+
+    &__button-svg{
+
+        width: 32px;
+        height: 32px; 
+        margin: 0;
+        padding: 0;
+
+    }
+
+    &.mobile--open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    @media screen and (min-width: 1200px){
+        display: none;
     }
 }
