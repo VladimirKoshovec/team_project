@@ -1,5 +1,5 @@
-// --Bacground--
 .gallery__container {
+  position: relative;
   background-image: url(../images/gallery/background/background-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@
     @media screen and (min-width: 1200px) {
       background-image: url(../images/gallery/background/background-des.png);
               
-      @media screen and (min-device-pixel-ratio: 2),
+    @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -38,14 +38,39 @@
   }
 }
 
-
 // --Foto ice--
+.gallery__ice {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%);
 
+  @media screen and (min-width:768px) {
+    top: -164px;
+      }
+
+  @media screen and (min-width:1200px) {
+    top: -94px;
+      }
+}
 
 // --Foto woman--
 .gallery__woman {
   display: block;
+  width: 100%;
   height: auto;
+  margin-top: 186px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 218px;
+      }
+
+  @media screen and (min-width:1200px) {
+    margin-top: 452px;
+      }
 }
 
 .gallery__woman-indent {
@@ -61,12 +86,24 @@
   border-radius: 10px;
   
   background-color: #84A178;
+
+  @media screen and (min-width:768px) {
+    padding: 29px 80px 28px;
+      }
+  
+  @media screen and (min-width:1200px) {
+    padding: 39px 109px 47px;
+      }
 }
 
 .gallery__comments-indent {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+      margin-bottom: 32px;
+        }
 }
 
 .gallery__text {
@@ -76,12 +113,19 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 255%;
+  letter-spacing: 0.04em;
   
   color: #FCFCFC;
-}
 
-.gallery__text-indent {
-  margin-bottom: 14px;
+  @media screen and (min-width:768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+      }
+  
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+      }
 }
 
 // --Text--
@@ -94,6 +138,18 @@
   line-height: 186%;
 
   color: #000000;
+
+  @media screen and (min-width:768px) {
+    font-size: 16px;
+      }
+}
+
+.gallery__text-indent {
+  margin-bottom: 14px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 32px;
+        }
 }
 
 // --Cicles--
@@ -105,6 +161,14 @@
 
 .gallery__cicles-indent {
   margin-bottom: 393px;
+
+  @media screen and (min-width:768px) {
+        margin-bottom: 384px;
+          }  
+
+  @media screen and (min-width:1200px) {
+        margin-bottom: 196px;
+          }
 }
 
 .gallery__cicles--green {
