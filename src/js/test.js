@@ -1,15 +1,15 @@
 // console.log("test: Hello team!!!")
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[menu-mobile-open]"),
-      closeModalBtn: document.querySelector("[menu-mobile-close]"),
-      modal: document.querySelector("[menu-mobile]"),
+      openModalBtnMenu: document.querySelector("[menu-mobile-open]"),
+      closeModalBtnMenu: document.querySelector("[menu-mobile-close]"),
+      modalMenu: document.querySelector("[menu-mobile]"),
     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtnMenu.addEventListener("click", toggleModal);
+    refs.closeModalBtnMenu.addEventListener("click", toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle("mobile--open");
+      refs.modalMenu.classList.toggle("mobile--open");
     }
   })();
