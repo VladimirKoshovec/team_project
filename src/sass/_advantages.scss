@@ -1,4 +1,5 @@
-.advantages {
+.advantages__container {
+    background-color: #84A178;
     padding-bottom: 40px;
 
     @media screen and ( min-width: 768px) {
@@ -8,10 +9,6 @@
     @media screen and (min-width: 1200px) {
         padding-bottom: 180px;        
     }
-}
-
-.advantages__container {
-    background-color: #84A178;
 }
 
 .advantages__text-cow::before {
