@@ -57,6 +57,38 @@
     height: auto;
 }
 
+.about__img:hover.rotate-y {
+    animation: rotateY 2500ms infinite alternate ease-in-out 1000ms;
+  }
+  
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about__description-list {
     margin-bottom: 20px;
 

@@ -23,6 +23,21 @@
     background-image: url(../images/about/icon-cow.png)
 }
 
+.advantages__text-cow:hover::before {
+    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+  }
+  
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+
+
 .advantages__text-weight::before {
     content: "";
     display: block;
@@ -35,6 +50,20 @@
     background-image: url(../images/about/icon-weight.png)
 }
 
+.advantages__text-weight:hover::before {
+    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+  }
+  
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+
 .advantages__text-icecream::before {
     content: "";
     display: block;
@@ -46,6 +75,20 @@
     border-radius: 25px;
     background-image: url(../images/about/icon-ice.png)
 }
+
+.advantages__text-icecream:hover::before {
+    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+  }
+  
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+  
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
 
 .advantages__text-cow {
     margin-bottom: 18px;
