@@ -376,6 +376,7 @@ transform: translate(-50%, -160%);
 .btn--bg-green {
 background-color: var(--product-cart-cream);
 background-image: url(../images/products/arrow-default.png);
+transition: height 250ms linear, width 250ms linear, background-image 250ms linear;
 
     &:hover {
         background-image: url(../images/products/arrow-hover.png);
@@ -392,6 +393,7 @@ background-image: url(../images/products/arrow-default.png);
 .btn--bg-yellow {
     background-color: var(--product-cart-coffee);
     background-image: url(../images/products/arrow-default.png);
+    transition: height 250ms linear, width 250ms linear, background-image 250ms linear;
     
         &:hover {
             background-image: url(../images/products/arrow-hover.png);
@@ -408,6 +410,7 @@ background-image: url(../images/products/arrow-default.png);
 .btn--bg-brown {
     background-color: var(--address-text-color);
     background-image: url(../images/products/arrow-default.png);
+    transition: height 250ms linear, width 250ms linear, background-image 250ms linear;
 
     &:hover {
     background-image: url(../images/products/arrow-hover.png);
