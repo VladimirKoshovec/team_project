@@ -9,6 +9,7 @@
         background-position: bottom;
         background-size: 100%;
 
+
         overflow: hidden;
 
         @media screen and (min-width: 768px){
@@ -465,7 +466,69 @@
         line-height: 1.25;
         text-decoration: underline;
     }
-}
+
+    &__button{
+
+       font-family: 'Montserrat', sans-serif;
+   
+       font-weight: 600;
+       font-size: 8px;
+       line-height: 1.25;
+
+       background-color: transparent;
+       border-radius: 10px;
+       border-style: solid; 
+       border-width: 2px;
+       border-color: #F8D24E;
+
+       color: #000000;
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       width: 62px;
+       height: 24px;
+
+
+       transition: color 250ms linear, 
+       border-color 250ms linear;
+
+       &:hover{
+        border-color:#0A8817;
+    }
+
+    &:focus {
+        border-color:#0A8817;
+        color: #FCFCFC;
+    }
+
+       @media screen and (min-width:1200px) {
+
+          width: 134px;
+          height: 42px;
+
+          font-size: 14px;
+          line-height: 1.29;
+
+          &:hover{
+            border-color:#0A8817;
+        }
+
+        &:focus {
+            border-color:#0A8817;
+            color: #FCFCFC;
+        }
+
+      }
+
+
+       
+    }
+
+
+    }
+
 
 .header-image{
     position: relative;
