@@ -4,11 +4,11 @@
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
-        padding-bottom: 50px;
+        padding-bottom: 83px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-bottom: 60px;
+        padding-bottom: 100px;
     }
 }
 
@@ -19,7 +19,7 @@
     line-height: 1.22;
     text-align: center;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 .about__title {
@@ -30,7 +30,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 .about__frame {
@@ -71,7 +71,7 @@
     font-size: 12px;
     line-height: 1.62;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -145,7 +145,7 @@
         font-size: 16px;
         line-height: 1.62;
         letter-spacing: 0.04em;
-        color: #FCFCFC;
+        color: var(--primary-text-color);
     }
 }
 
@@ -160,41 +160,45 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.14;
-    background-color: #F8D24E;
+    background-color: var(--button-color);
     border-radius: 10px;
     border: none;
 
-    color: #000000;
+    color: var(--secondary-text-color);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     width: 164px;
+
+    transition: color 250ms linear, 
+    background-color 250ms linear;
     
     &:hover {
-        background-color: #0A8817;
+        background-color: var(--accent-color);
     }
     
     //  Vladimir
 
     &:focus, &:focus > .about__read-button-svg{
 
-        background-color: #0A8817;
-        color: #FCFCFC;
-        stroke:  #FCFCFC;
+        background-color: var(--accent-color);
+        color: var(--primary-text-color);
+        stroke:  var(--primary-text-color);
     }
 
     &-svg {
-        stroke: #000000;
+        stroke: var(--secondary-text-color);
         width: 12px;
         height: 12px;
+        transition: stroke 250ms linear;
 
         //  Vladimir
 
         &:focus{
             
-            stroke:  #FCFCFC;
+            stroke:  var(--primary-text-color);
         }
     }
  }
@@ -202,7 +206,7 @@
 //  Vladimir
 
 //  .about__read-button-svg:focus {
-//     stroke: #fcfcfc;
+//     stroke: var(--primary-text-color);
 // }
 
 
@@ -235,7 +239,7 @@
     width: 280px;
     height: 459px;
     background-color: #ffffff;
-    border: 2px solid #F8D24E;
+    border: 2px solid var(--button-color);
     border-radius: 10px;
 }
 
@@ -257,7 +261,7 @@
 }
 
 .about__modal-close-button-icon {
-    fill: #000000;
+    fill: var(--secondary-text-color);
 }
 
 .about__modal-title {
@@ -270,13 +274,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: var(--secondary-text-color);
 }
 
 .about__modal-text {
     font-size: 14px;
     line-height: 1.4;
-    color: #000000;
+    color: var(--secondary-text-color);
 }
 
 .about__video {
@@ -307,7 +311,7 @@
         margin-right: auto;
         font-size: 16px;
         line-height: 1.4;
-        color: #000000;
+        color: var(--secondary-text-color);
     }
     
     .about__video {
