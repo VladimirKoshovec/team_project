@@ -22,3 +22,20 @@ a{
     clip: rect(0 0 0 0); 
     overflow: hidden; 
 }
+
+:root {
+    --primary-background-color: #84A278;
+    --secondary-background-color: #FFFFFF;
+    --primary-text-color: #FCFCFC;
+    --secondary-text-color: #000000;
+    --contacts-text-color: #131313;
+    --time-text-color:#ABABAB;
+    --address-text-color: #D6936D;
+    --button-color: #F8D24E;
+    --accent-color: #0A8817;
+    --accent-color-text: #FCFCFC;    ;
+    --touch-color: #ABABAB;
+    --product-cart-cream: #AEC6A5;
+    --product-cart-coffee: #EFD478;
+    --product-cart-milkshakes: #D6936D;
+ }
