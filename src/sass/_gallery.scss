@@ -85,7 +85,7 @@
   padding: 34px 39px;
   border-radius: 10px;
   
-  background-color: #84A178;
+  background-color: var(--primary-background-color);
 
   @media screen and (min-width:768px) {
     padding: 29px 80px 28px;
@@ -105,17 +105,15 @@
       margin-bottom: 32px;
         }
 }
-
 .gallery__text {
   text-align: center;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 255%;
   letter-spacing: 0.04em;
   
-  color: #FCFCFC;
+  color: var(--primary-text-color);
 
   @media screen and (min-width:768px) {
     font-weight: 500;
@@ -131,13 +129,12 @@
 // --Text--
 .gallery__text-name {
   text-align: center;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
 
-  color: #000000;
+  color: var(--secondary-text-color);
 
   @media screen and (min-width:768px) {
     font-size: 16px;
@@ -177,7 +174,7 @@
   border-radius: 50%;
   border: none;
   
-  background-color: #84A178;
+  background-color: var(--primary-background-color);
 }
 
 .gallery__cicles--grey {
