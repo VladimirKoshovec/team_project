@@ -230,6 +230,28 @@
             background-image: url(../images/header/many_ice@2x.png);
             }
 
+            &:hover{
+                animation-name: spin;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+
+                @keyframes spin {
+                      0% {
+                        transform: rotate(0deg);
+                        }
+         
+                        50% {
+                        transform: rotate(5deg);
+                        }
+
+                        100% {
+                        transform: rotate(0deg);
+                        }
+                    }
+            }
+
+
         }
 
 
@@ -623,9 +645,11 @@
       }
 
       &__errow{
+
         margin-top: 14px;
         width: 41px;
         height: 16px;
+        
       }
     }  
 
