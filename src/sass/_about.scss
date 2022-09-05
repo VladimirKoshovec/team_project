@@ -150,41 +150,47 @@
 }
 
 // <!-- ===ABOUT BUTTON=== -->
-    .about__buttons-read {
-        margin-left: auto;
-        margin-right: auto;
-       padding: 12px 34px;
+.about__read-button {        
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
 
-       font-weight: 600;
-       font-size: 14px;
-       line-height: 1.14;
-       background-color: #F8D24E;
-       border-radius: 10px;
-       border: none;
-       color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.14;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    border: none;
 
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
+    color: #000000;
 
-       width: 164px;
-       
-        &:hover {
-            background-color: #0A8817;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        &:focus {
-            font-weight: 700;
-        }
-
-        @media screen and (min-width: 768px) {
-            margin: 0;            
-        }
-}
-    .buttons-read__svg {
-        margin-left: 5px;
-        fill: #000000;
+    width: 164px;
+    
+    &:hover {
+        background-color: #0A8817;
     }
+    
+    &:focus {
+        color: #fcfcfc;
+        background-color: #0a8817;
+    }
+
+    &-svg {
+        stroke: #000000;
+        width: 12px;
+        height: 12px;
+    }
+ }
+
+ .about__read-button-svg:focus {
+    stroke: #fcfcfc;
+}
 
 
 // <!-- ===ABOUT MODAL WINDOW=== -->
