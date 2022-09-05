@@ -1,5 +1,5 @@
 .advantages__container {
-    background-color: #84A178;
+    background-color: var(--primary-background-color);
     padding-bottom: 40px;
 
     @media screen and ( min-width: 768px) {
@@ -55,7 +55,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 .advantages__text-weight {
@@ -66,7 +66,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 .advantages__text-icecream {
@@ -77,7 +77,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 .advantages__description {
@@ -90,7 +90,7 @@
     font-size: 12px;
     line-height: 1.7;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +117,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
-        color: #FCFCFC;
+        color: var(--primary-text-color);
     }
 }
 
@@ -135,6 +135,6 @@
         margin-bottom: 28px;
         width: 300px;
         letter-spacing: 0.02em;
-        color: #FCFCFC;
+        color: var(--primary-text-color);
     }
 }
