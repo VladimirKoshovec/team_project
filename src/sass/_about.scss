@@ -1,5 +1,5 @@
 .about__container {
-    background-color: #84A178;
+    background-color: #84a178;
     padding-top: 60px;
     padding-bottom: 40px;
 
@@ -38,7 +38,8 @@
     display: flex;
     width: 278px;
     height: 278px;
-    background-color: rgba(248, 210, 78, 0.7);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
 
     @media screen and (max-width: 767px) {
@@ -150,7 +151,7 @@
 }
 
 // <!-- ===ABOUT BUTTON=== -->
-.about__read-button {        
+.about__read-button {     
     font-family: 'Montserrat', sans-serif;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -186,6 +187,11 @@
         background-color: var(--accent-color);
         color: var(--primary-text-color);
         stroke:  var(--primary-text-color);
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     &-svg {
@@ -238,7 +244,7 @@
     padding: 28px;
     width: 280px;
     height: 459px;
-    background-color: #ffffff;
+    background-color: var(--secondary-background-color);
     border: 2px solid var(--button-color);
     border-radius: 10px;
 }
