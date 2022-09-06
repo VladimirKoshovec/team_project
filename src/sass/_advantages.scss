@@ -24,7 +24,8 @@
 }
 
 .advantages__text-cow:hover::before {
-    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+    animation: rotateY 500ms infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   
   @keyframes rotateY {
@@ -51,7 +52,7 @@
 }
 
 .advantages__text-weight:hover::before {
-    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+    animation: rotateY 500ms infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   @keyframes rotateY {
@@ -77,7 +78,7 @@
 }
 
 .advantages__text-icecream:hover::before {
-    animation: rotateY 500ms infinite alternate ease-in-out 1000ms;
+    animation: rotateY 500ms infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   @keyframes rotateY {

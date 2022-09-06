@@ -58,7 +58,7 @@
 }
 
 .about__img:hover.rotate-y {
-    animation: rotateY 2500ms infinite alternate ease-in-out 1000ms;
+    animation: rotateY 750ms infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   @keyframes rotateY {
