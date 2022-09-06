@@ -13,7 +13,7 @@
       }
 
   position: relative;
-  background-image: url(../images/gallery/background/background-mob.png);
+  background-image:  url(../images/gallery/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -23,7 +23,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
   
-      background-image: url(../images/gallery/background/background-mob@2x.png);
+      background-image: url(../images/gallery/background/background-mobile@2x.jpg);
         }
 
     @media screen and (min-width: 768px) {
