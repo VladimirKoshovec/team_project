@@ -12,15 +12,21 @@
 }
 
 .advantages__text-cow::before {
-    content: "";
-    display: block;
-    margin-bottom: 16px;
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    background-image: url(../images/about/icon-cow.png)
+  content: "";
+  display: block;
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  
+  background-color: var(--button-color);
+  background-image: url(../images/about/icon-cow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  
 }
 
 .advantages__text-cow:hover::before {
@@ -38,7 +44,7 @@
   }
 
 
-.advantages__text-weight::before {
+  .advantages__text-weight::before {
     content: "";
     display: block;
     margin-bottom: 16px;
@@ -47,7 +53,12 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    background-image: url(../images/about/icon-weight.png)
+
+    background-color: var(--button-color);
+    background-image: url(../images/about/icon-weight.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
 }
 
 .advantages__text-weight:hover::before {
@@ -64,7 +75,7 @@
     }
   }
 
-.advantages__text-icecream::before {
+  .advantages__text-icecream::before {
     content: "";
     display: block;
     margin-bottom: 16px;
@@ -73,7 +84,12 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    background-image: url(../images/about/icon-ice.png)
+
+    background-color: var(--button-color);
+    background-image: url(../images/about/icon-ice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
 }
 
 .advantages__text-icecream:hover::before {
