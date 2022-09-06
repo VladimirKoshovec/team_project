@@ -30,9 +30,13 @@
         background-color: #0A8817;
         border-color: #0A8817;
     }
-
-    &:focus {
+    
+    // Vladimir modified
+    &:focus, &:focus > .button-icon{
         color: #FCFCFC;
+        background-color: var(--accent-color);
+        color: var(--primary-text-color);
+        stroke: var(--primary-text-color);
     }
 }
 
@@ -62,14 +66,21 @@
         border-color: #0A8817;
     }
 
-    &:focus {
+    // Vladimir modified
+    &:focus, &:focus > .button-icon{
         color: #FCFCFC;
+        color: var(--primary-text-color);
+        stroke: var(--primary-text-color);
     }
 }
 
 .button-icon {
     margin-left: 6px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        // Vladimir modified
+        stroke: var(--secondary-text-color);
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .locations-button:focus &,
     .franchise-button:focus & {
@@ -100,7 +111,8 @@
 }
 
 .contacts__container {
-    border: 1px solid red;
+    border: 1px solid var(--primary-background-color);
+    border-color: none;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
