@@ -1,8 +1,20 @@
 // HEADER-HERO
 
 .header{
+
+    background-color: #84A178;
+    padding-top: 12px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 18px;
+    }
+    
     &__container{
-        padding-top: 12px;
+       
         position: relative;
         background-color: #84A178;
         background-image: url(../images/header/points_mobile.svg);
@@ -14,12 +26,10 @@
         overflow: hidden;
 
         @media screen and (min-width: 768px){
-            padding-top: 20px;
             background-image: url(../images/header/dots_tablet.svg);
         }
 
         @media screen and (min-width: 1200px){
-            padding-top: 18px;
             background-image: url(../images/header/dots_desktop.svg);
         }
 
