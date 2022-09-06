@@ -1,11 +1,24 @@
 .gallery__container {
+  padding-top: 181px;
+  padding-bottom: 393px;
+
+  @media screen and (min-width:768px) {
+    padding-top: 218px;
+    padding-bottom: 384px;
+      }  
+
+  @media screen and (min-width:1200px) {
+    padding-top: 452px;
+    padding-bottom: 196px;
+      }
+
   position: relative;
   background-image: url(../images/gallery/background/background-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
  
-  @media screen and (min-device-pixel-ratio: 2),
+    @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -13,7 +26,7 @@
       background-image: url(../images/gallery/background/background-mob@2x.png);
         }
 
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     background-image: url(../images/gallery/background/background-tab.png);
       
     @media screen and (min-device-pixel-ratio: 2),
@@ -62,15 +75,6 @@
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 186px;
-
-  @media screen and (min-width:768px) {
-    margin-top: 218px;
-      }
-
-  @media screen and (min-width:1200px) {
-    margin-top: 452px;
-      }
 }
 
 .gallery__woman-indent {
@@ -154,18 +158,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.gallery__cicles-indent {
-  margin-bottom: 393px;
-
-  @media screen and (min-width:768px) {
-        margin-bottom: 384px;
-          }  
-
-  @media screen and (min-width:1200px) {
-        margin-bottom: 196px;
-          }
 }
 
 .gallery__cicles--green {
